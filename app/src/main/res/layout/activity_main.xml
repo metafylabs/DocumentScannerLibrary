@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Ali YÜCE on 3/2/20 11:18 PM
+  ~  * https://github.com/mayuce/
+  ~  * Copyright (c) 2020 . All rights reserved.
+  ~  * Last modified 3/2/20 11:17 PM
+  ~  */
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:clipToPadding="false"
+        tools:context=".MainActivity">
+
+    <Button
+            android:id="@+id/btnPick"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:backgroundTint="#1186E4"
+            android:padding="0dp"
+            android:text="@string/pick_an_image"
+            android:textColor="#FBFBFD"
+            android:background="@drawable/custombutton"/>
+
+    <ImageView
+            android:id="@+id/imgBitmap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:contentDescription="@string/todo" />
+
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="252dp"
+            android:layout_height="42dp"
+            android:layout_above="@+id/btnPick"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="77dp"
+            android:layout_marginBottom="39dp"
+            android:text="@string/to_make_your_life_easy"
+            android:textColor="#039BE5"
+            android:textSize="24sp" />
+
+    <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnPick"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="80dp"
+            android:text="Document Scanner"
+            android:textColor="#146891"
+            android:textSize="34sp" />
+
+    <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="338dp"
+            android:layout_height="347dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="38dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/download" />
+
+</RelativeLayout>
